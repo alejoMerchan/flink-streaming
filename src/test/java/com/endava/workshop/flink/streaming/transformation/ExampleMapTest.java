@@ -25,7 +25,7 @@ public class ExampleMapTest {
         env.setParallelism(2);
 
         // create a stream of customs elements and apply transformations (Map)
-        //env.fromElements(1L, 21L, 22L).map(new IncrementMapFunction()).print();
+        env.fromElements(1, 21, 22).map(new IncrementMapFunction()).print();
 
         // execute
         env.execute();
